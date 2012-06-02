@@ -8,6 +8,8 @@ everyauth.helpExpress = function () {
   return this;
 }
 
+everyauth.helpExpress = require('./lib/expressHelper');
+
 everyauth.debug = false;
 
 // The connect middleware. e.g.,
