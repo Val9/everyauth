@@ -3,11 +3,6 @@ var connect = require('connect')
   , everyauth = module.exports = {};
 
 
-everyauth.helpExpress = function () {
-  console.warn('everyauth.helpExpress is being deprecated. helpExpress is now automatically invoked when it detects express. So remove everyauth.helpExpress from your code');
-  return this;
-}
-
 everyauth.helpExpress = require('./lib/expressHelper');
 
 everyauth.debug = false;
